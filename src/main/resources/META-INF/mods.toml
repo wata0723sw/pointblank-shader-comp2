@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="pbj_iris_shadowfix"
+version="1.0.0"
+displayName="PointBlank × Oculus Shadow Fix"
+description='''
+Disable Point Blank's Iris shadow hook to avoid UnsupportedOperationException.
+'''
+
+mixins=[
+  "pbjshadowfix.mixins.json"
+]
+
+[[dependencies.pbj_iris_shadowfix]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.pbj_iris_shadowfix]]
+    modId="pointblank"
+    mandatory=false
+    versionRange="[2.0.0,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.pbj_iris_shadowfix]]
+    modId="oculus"
+    mandatory=false
+    versionRange="[1.7.0,)"
+    ordering="NONE"
+    side="CLIENT"
