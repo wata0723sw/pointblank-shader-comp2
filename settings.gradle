@@ -1,1 +1,10 @@
+pluginManagement {
+    repositories {
+        // ★ ForgeGradle を解決するために必須
+        maven { url = 'https://maven.minecraftforge.net' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
 rootProject.name = 'pbj-iris-shadowfix'
