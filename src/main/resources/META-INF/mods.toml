@@ -10,3 +10,16 @@ displayName="PBJ Iris Shadow Fix"
 description="Disable PointBlank's Iris shadow hook to avoid crash."
 mixins = ["pbjshadowfix.mixins.json"]
 # 依存セクションは一切置かない（Forge/PointBlank/Oculus を要求しない）
+[[dependencies.pbj_iris_shadowfix]]
+modId="pointblank"
+mandatory=true
+versionRange="[2.0.0,)"
+ordering="AFTER"
+side="CLIENT"
+
+[[dependencies.pbj_iris_shadowfix]]
+modId="oculus"
+mandatory=false       # あってもなくても動く
+versionRange="[1.8.0,)"
+ordering="AFTER"
+side="CLIENT"
